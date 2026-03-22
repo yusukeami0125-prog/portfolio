@@ -1,0 +1,158 @@
+@charset"utf-8";
+
+/* all */
+body {
+  font-size: 16px;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+
+header,
+main,
+footer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: skyblue;
+
+}
+
+header h1 {
+  font-size: 23px;
+  letter-spacing: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navcation {
+  display: flex;
+  gap: 30px;
+}
+
+/* main */
+.iconimg {
+  width: 300px;
+  border-radius: 50%;
+  margin: 80px auto;
+}
+
+.iconimg img {
+  border-radius: 50%;
+}
+
+main>h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  letter-spacing: 10px;
+  border-bottom: 10px #2d2d2d double;
+  width: 5em;
+}
+
+.cotainer {
+  display: flex;
+  align-items: center;
+  
+}
+
+.revece {
+  flex-direction: row-reverse;
+}
+
+.flextext {
+  flex-basis: 50%;
+  
+}
+
+.fleximg {
+  flex-basis: 50%;
+}
+
+.flextext h3 {
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 48px;
+  text-align: left;
+
+}
+.xiko{
+
+  margin-left: 50px;
+}
+.flextext>dl {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.flextext>dl>dt {
+  width: 30%;
+  margin-bottom: 28px;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+}
+
+.flextext>dl>dd {
+  width: 50%;
+  margin-bottom: 28px;
+  text-decoration: underline;
+  color: red;
+}
+.flextext>ul{
+list-style-type: disc;
+list-style-position: inside;
+text-align: left;;
+
+
+}
+.flextext>ul>li{
+  margin-bottom: 28px;
+  letter-spacing: 5px;
+}
+.flextext>ol>li{
+  margin-bottom: 28px;
+  letter-spacing: 5px;
+}
+
+footer{
+  text-align: center;
+  background-color: skyblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* mediekuri */
+@media(max-width:700px){
+ header,
+  main,
+  footer{
+    /* background-color: aquamarine; */
+    width: 90vw;
+  }
+  .cotainer{
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .flextext{
+    margin-top: 30px;
+  }
+  .flextext>ol{
+    padding-left: 2.2rem;
+  }
+}
+
