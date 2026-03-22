@@ -154,5 +154,7 @@ footer{
   .flextext>ol{
     padding-left: 2.2rem;
   }
+  .navcation{
+    flex-direction: column;
 }
 
